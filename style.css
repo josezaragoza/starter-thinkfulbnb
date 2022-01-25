@@ -44,6 +44,7 @@ main img {
 .item {
   flex: 1;
   margin: 10px;
+  width: 90%;
 }
 
 .item-double {
@@ -121,6 +122,7 @@ footer p {
 nav ul {
   display: flex;
   justify-content: center;
+  padding-bottom: 20px;
 }
 
 #stay form {
@@ -128,10 +130,109 @@ nav ul {
   flex-direction: column;
 }
 
+#stay form div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 15px 5px 15px;
+}
+
+#about .group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .group img {
+  width: 90%;
+  padding: 10px 0 10px 0;
+}
+
+#about .group p {
+  width: 90%;
+  font-size: 17px;
+  padding: 15px;
+}
+
+#ideas .group {
+  margin: 15px;
+}
+#ideas .group img {
+  width: 100%;
+}
+
+#host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#host div img {
+  width: 100%;
+}
+
 /* -------  Media Query ------- */
 
-@media all and (min-width: 1015px) {
+@media all and (min-width: 480px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+  header .logo {
+    font-size: 40px;
+  }
+
   #stay form {
     flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  #stay form div {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #about .group {
+    flex-direction: row;
+  }
+
+  #about .group img {
+    width: 24%;
+    padding-right: 20px;
+  }
+
+  #ideas .group {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #ideas .group div {
+    width: 48%;
+    padding: 10px;
+  }
+
+  #ideas .group img {
+    width: 100%;
+  }
+
+  #host {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  #host div {
+    width: 50%;
+  }
+
+  #host .info {
+    font-size: 12px;
+    padding: 0 15px 0 20px;
+  }
+
+  #host div img {
+    width: 95%;
   }
 }
