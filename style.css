@@ -186,6 +186,7 @@ nav ul {
 
   #stay form {
     flex-direction: row;
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
 
