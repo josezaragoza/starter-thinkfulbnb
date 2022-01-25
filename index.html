@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vacation Rentals & Unique Homes</title>
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
@@ -35,6 +35,29 @@
       <section id="stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
+        <form>
+          <div>
+            <label for="location">Location</label>
+            <input id='location' name="location" type="text" placeholder="Search destination" >
+          </div>
+          <div>
+            <label for="arrive">Arrive</label>
+            <input id='arrive' name="arrive" type="date">
+          </div>
+          <div>
+            <label for="depart">Depart</label>
+            <input id="depart" name="depart" type="date">
+          </div>
+          <div>
+            <label for="type">Type</label>
+            <select name="type" id="type" size="1">
+              <option value="apartment">Apartment</option>
+              <option value="house">House</option>
+              <option value="hotel">Hotel</option>
+            </select>
+            <button>Search</button>
+          </div>
+        </form>
       </section>
 
       <!-- About -->

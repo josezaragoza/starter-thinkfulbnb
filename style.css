@@ -116,4 +116,22 @@ footer p {
   padding: 20px;
 }
 
+/* ------- Mobile View -------- */
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+#stay form {
+  display: flex;
+  flex-direction: column;
+}
+
 /* -------  Media Query ------- */
+
+@media all and (min-width: 1015px) {
+  #stay form {
+    flex-direction: row;
+  }
+}
