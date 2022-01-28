@@ -248,7 +248,15 @@ align-items: flex-start;
   }
 
   #host .info {
-    font-size: 12px;
+    font-size: 1.5vw;
     padding: 0 15px 0 20px;
+  }
+
+  #host .info h2 {
+    font-size: 2vw;
+  }
+
+  #host .info ul {
+    font-size: 1.5vw;
   }
 }
